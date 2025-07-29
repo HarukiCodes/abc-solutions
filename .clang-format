@@ -1,2 +1,2 @@
-BasedOnStyle: Google  # または LLVM（Qt以外でも軽量）
+BasedOnStyle: Google 
 IndentWidth: 4

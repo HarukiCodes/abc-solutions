@@ -4,5 +4,5 @@
         "iostream": "cpp",
         "cmath": "cpp"
     },
-    // "C_Cpp.clang_format_style": "Google"
+    "C_Cpp.clang_format_style": "file"
 }
