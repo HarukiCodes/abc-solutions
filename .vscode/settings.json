@@ -1,8 +1,11 @@
 {
     "files.associations": {
+        "CMakeLists.txt": "cmake",
+        "*.cmake": "cmake",
         "ostream": "cpp",
         "iostream": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "string": "cpp"
     },
     "C_Cpp.clang_format_style": "file"
 }
