@@ -1,5 +1,4 @@
 #include <iostream>
-#include <map>
 #include <vector>
 using namespace std;
 
@@ -7,22 +6,23 @@ int main() {
     int n, m;
     cin >> n >> m;
     vector<int> a(n), b(m);
-    map<long long, int> cnt;
     for (int& i : a) {
         cin >> i;
-        if (cnt.find(i) == cnt.end()) {
-            cnt[i] = 1;
-        } else {
-            cnt[i]++;
-        }
     }
     for (int& i : b) {
         cin >> i;
     }
-
+    vector<int> canEat(n, true);
     for (int i = 0; i < m; i++) {
-        cnt[b[i]]--;
-        if (cnt[b[i]] == -1) {
+        bool ate = false;
+        for (int j = 0; j < n; j++) {
+            if (b[i] == a[j] && canEat[j]) {
+                canEat[j] = false;
+                ate = true;
+                break;
+            }
+        }
+        if (!ate) {
             cout << "No" << endl;
             return 0;
         }
