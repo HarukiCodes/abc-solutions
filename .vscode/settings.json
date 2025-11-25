@@ -6,7 +6,8 @@
         "iostream": "cpp",
         "cmath": "cpp",
         "string": "cpp",
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "random": "cpp"
     },
     "C_Cpp.clang_format_style": "file"
 }
