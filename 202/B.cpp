@@ -1,26 +1,17 @@
-// ABC202 B
 #include <bits/stdc++.h>
 using namespace std;
 
-int main()
-{
-    string S;
-    cin >> S;
-    int length = static_cast<int>(S.size());
-    for (int i = length - 1; i >= 0; i--)
-    {
-        char output = S[i];
-        switch (S[i])
-        {
-        case '6':
-            output = '9';
-            break;
-        case '9':
-            output = '6';
-            break;
+int main() {
+    string s;
+    cin >> s;
+    for (int i = 0; i < s.size(); i++) {
+        if (s[i] == '6') {
+            s[i] = '9';
+        } else if (s[i] == '9') {
+            s[i] = '6';
         }
-        cout << output;
     }
-    cout << endl;
+    reverse(s.begin(), s.end());
+    cout << s << endl;
     return 0;
 }
