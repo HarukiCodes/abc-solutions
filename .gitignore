@@ -32,8 +32,9 @@
 
 # Executables
 *.exe
+**/app
 *.out
-*.app
+app
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
