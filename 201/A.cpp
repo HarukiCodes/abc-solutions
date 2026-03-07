@@ -1,22 +1,17 @@
-// ans1
-#if 0
-#include <iostream>
+#if 1
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int input[3];
-    for (int &x : input)
-    {
+    for (int& x : input) {
         cin >> x;
     }
     sort(input, input + 3);
-    do
-    {
+    do {
         int dif[2] = {input[1] - input[0], input[2] - input[1]};
-        if (dif[0] == dif[1])
-        {
+        if (dif[0] == dif[1]) {
             cout << "Yes" << endl;
             return 0;
         }
@@ -28,20 +23,17 @@ int main()
 
 // ans2
 #if 1
-#include <iostream>
 #include <algorithm>
+#include <iostream>
 using namespace std;
 
-int main()
-{
+int main() {
     int input[3] = {};
-    for (int i = 0; i < 3; i++)
-    {
+    for (int i = 0; i < 3; i++) {
         cin >> input[i];
     }
     sort(input, input + 3);
-    if (input[1] - input[0] == input[2] - input[1])
-    {
+    if (input[1] - input[0] == input[2] - input[1]) {
         cout << "Yes" << endl;
         return 0;
     }
