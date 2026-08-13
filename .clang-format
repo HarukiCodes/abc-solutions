@@ -1,7 +1,7 @@
 BasedOnStyle: Google
 IndentWidth: 4
 ColumnLimit: 0
-NamespaceIndentation: All
-BreakBeforeBraces: Allman
-AllowShortFunctionsOnASingleLine: None
-PackConstructorInitializers: Never
+# NamespaceIndentation: All
+# BreakBeforeBraces: Allman
+# AllowShortFunctionsOnASingleLine: None
+# PackConstructorInitializers: Never
