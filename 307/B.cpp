@@ -18,12 +18,12 @@ int main() {
                 continue;
             }
             // 回文判定
-            string sentense = s[i] + s[j];
-            size_t length = sentense.size();
+            string sentence = s[i] + s[j];
+            size_t length = sentence.size();
             size_t center = length / 2;
             bool is_palindrome = true;
             for (size_t k = 0; k < center; k++) {
-                if (sentense[k] != sentense[length - 1 - k]) {
+                if (sentence[k] != sentence[length - 1 - k]) {
                     is_palindrome = false;
                     break;
                 }
