@@ -1,23 +1,20 @@
-// A
-#include <bits/stdc++.h>
+#include <iostream>
+#include <vector>
 using namespace std;
 
-int main()
-{
-    int N;
-    cin >> N;
-    vector<int> A(N);
-    for (int &a : A)
-        cin >> a;
-    int B = A[0];
-    for (int i = 1; i < N; i++)
-    {
-        if (A[i] != B)
-        {
-            cout << "No" << endl;
-            return 0;
+int main() {
+    int n;
+    cin >> n;
+    vector<int> a(n);
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    bool yes = true;
+    for (int i = 1; i < n; i++) {
+        if (a[i - 1] != a[i]) {
+            yes = false;
         }
     }
-    cout << "Yes" << endl;
+    cout << (yes ? "Yes\n" : "No\n");
     return 0;
 }
